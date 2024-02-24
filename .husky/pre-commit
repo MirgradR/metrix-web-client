@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Запуск Linter'а
 npm run lint
 
-# Запуск Prettier для автоматического форматирования
 npm run format
