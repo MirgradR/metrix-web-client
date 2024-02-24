@@ -1,15 +1,20 @@
+import nested from 'postcss-nested'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import postcssPresetEnv from 'postcss-preset-env'
+
 module.exports = {
   plugins: [
-    require("postcss-nested"),
-    require("autoprefixer"),
-    require("cssnano")({
-      preset: "default",
+    nested,
+    autoprefixer,
+    cssnano({
+      preset: 'default'
     }),
-    require("postcss-preset-env")({
+    postcssPresetEnv({
       stage: 3,
       features: {
-        "custom-properties": false,
-      },
-    }),
-  ],
-};
+        'custom-properties': false
+      }
+    })
+  ]
+}
