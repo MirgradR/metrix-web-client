@@ -13,7 +13,7 @@ export default (env: EnvVariables) => {
   const paths: WebpackPaths = {
     html: path.resolve(__dirname, 'public', 'index.html'),
     output: path.resolve(__dirname, 'build'),
-    entry: path.resolve(__dirname, 'src', 'index.tsx'),
+    entry: path.resolve(__dirname, 'src', 'app', 'appEntry.tsx'),
     src: path.resolve(__dirname, 'src'),
     public: path.resolve(__dirname, 'public')
   }
