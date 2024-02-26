@@ -1,0 +1,65 @@
+:root {
+  /* font-size для заголовков */
+  --fs-h1: 64px;
+  --fs-h2: 52px;
+  --fs-h3: 44px;
+
+  /* font-size для подзаголовков */
+  --fs-sh1: 32px;
+  --fs-sh2: 28px;
+  --fs-sh3: 20px;
+
+  /* font-size для параграфов */
+  --fs-p1: 16px;
+  --fs-p2: 14px;
+
+  /* font-size для лейблов */
+  --fs-l1: 12px;
+  --fs-l2: 11px;
+  --fs-l3: 10px;
+
+  /* color для главного цвета */
+  --clr-primary-10: #DBDEEE;
+  --clr-primary-20: #C4CAE8;
+  --clr-primary-30: #B6BFE8;
+  --clr-primary-40: #ABB5E9;
+  --clr-primary-50: #97A5EB;
+  --clr-primary-60: #8899E9;
+  --clr-primary-70: #7C8FEC;
+  --clr-primary-80: #6D83EC;
+  --clr-primary-90: #6078EC;
+  --clr-primary-100: #5570F1;
+
+  /* color для второстепенного цвета */
+  --clr-secondary-10: #FEF9F2;
+  --clr-secondary-20: #FEF5EA;
+  --clr-secondary-30: #FFF2E2;
+  --clr-secondary-40: #FFF0DE;
+  --clr-secondary-50: #FFEAD1;
+  --clr-secondary-60: #FFE5C8;
+  --clr-secondary-70: #FFDFBA;
+  --clr-secondary-80: #FFDAAE;
+  --clr-secondary-90: #FFD29E;
+  --clr-secondary-100: #FFCC91;
+
+  /* color для черного цвета */
+  --clr-black-10: #BEC0CA;
+  --clr-black-20: #A6A8B1;
+  --clr-black-30: #8B8D97;
+  --clr-black-40: #6E7079;
+  --clr-black-50: #53545C;
+  --clr-black-60: #45464E;
+  --clr-black-70: #37393F;
+  --clr-black-80: #33343A;
+  --clr-black-90: #2C2D33;
+  --clr-black-100: #1C1D22;
+
+  /* color для action */
+  --clr-action-go: #519C66;
+  --clr-action-stop: #CC5F5F;
+
+  /* font-family для заголовков и подзаголовков */
+  --ff-primary: "Poppins", sans-serif;
+  /* font-family для параграфов и лейблов */
+  --ff-secondary: "Inter", sans-serif;
+}
