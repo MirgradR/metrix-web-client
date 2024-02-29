@@ -4,7 +4,8 @@
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -13,12 +14,16 @@ a {
   color: inherit;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
   height: auto;
 }
 
-header, footer, section, article {
+header,
+footer,
+section,
+article {
   margin: 0;
 }
 
@@ -28,7 +33,10 @@ html {
   line-height: 1.5;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
