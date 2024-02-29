@@ -2,7 +2,7 @@
 // import { Story, Meta } from '@storybook/react';
 // import Icon from './Icon';
 // import icons from '@/shared/ui/Icon/assets';
-// import './icon.styles.css';
+// import './icon.styles.module.css';
 //
 // export default {
 //   title: 'UI/Icon',
