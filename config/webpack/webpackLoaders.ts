@@ -4,7 +4,7 @@ import { WebpackOptions } from './types/types'
 
 export const webpackLoaders = ({ isDev }: WebpackOptions): ModuleOptions['rules'] => {
   const cssLoader = {
-    test: /\.css$/i,
+    test: /\.module\.css$/i,
     use: [
       isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
       {
@@ -17,6 +17,12 @@ export const webpackLoaders = ({ isDev }: WebpackOptions): ModuleOptions['rules'
       },
       'postcss-loader'
     ]
+  }
+
+  const regularCssLoader = {
+    test: /\.css$/,
+    exclude: /\.module\.css$/,
+    use: [isDev ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
   }
 
   const assetLoader = {
@@ -54,5 +60,5 @@ export const webpackLoaders = ({ isDev }: WebpackOptions): ModuleOptions['rules'
     ]
   }
 
-  return [cssLoader, assetLoader, babelLoader, svgLoader]
+  return [cssLoader, assetLoader, babelLoader, svgLoader, regularCssLoader]
 }
