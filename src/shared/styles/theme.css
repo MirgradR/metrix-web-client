@@ -29,8 +29,10 @@
   --clr-primary-80: #6d83ec;
   --clr-primary-90: #6078ec;
   --clr-primary-100: #5570f1;
+  --clr-primary-110: #5B6EC6;
 
   /* color для второстепенного цвета */
+  --clr-secondary-1: #fff;
   --clr-secondary-10: #fef9f2;
   --clr-secondary-20: #fef5ea;
   --clr-secondary-30: #fff2e2;
@@ -54,12 +56,21 @@
   --clr-black-90: #2c2d33;
   --clr-black-100: #1c1d22;
 
+  /* color для зеленого цвета */
+  --clr-green-10: #458B71;
+  --clr-green-20: #32936F;
+
+  /* color для крсного цвета */
+  --clr-danger-10: #F57E77;
+  --clr-danger-20: #C95F58;
+
   /* color для action */
   --clr-action-go: #519c66;
   --clr-action-stop: #cc5f5f;
 
   /* font-family для заголовков и подзаголовков */
   --ff-primary: 'Poppins', sans-serif;
+  
   /* font-family для параграфов и лейблов */
   --ff-secondary: 'Inter', sans-serif;
 }
