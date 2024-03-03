@@ -1,6 +1,7 @@
 import icons from '@/shared/ui/Icon/assets'
 import { IconProps } from '@/shared/ui/Icon/Icon.model'
 import React from 'react'
+import './icon.styles.css'
 
 const Icon: React.FC<IconProps> = ({ icon, color, className, size, ...props }) => {
   const SvgIcon = icons[icon]
