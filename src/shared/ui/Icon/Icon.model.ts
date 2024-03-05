@@ -1,4 +1,4 @@
-import icons from '@/shared/ui/Icon/assets'
+import icons from './assets'
 
 export interface IconProps {
   icon: keyof typeof icons

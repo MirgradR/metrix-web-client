@@ -1,12 +1,10 @@
-import React from 'react'
-
 import Button, { ButtonProps } from './Button'
 import Icon from '../Icon/Icon'
 
 import '../../styles/theme.css'
 
 export default {
-  title: 'UI/Button',
+  title: 'Metrix UI/Button',
   component: Button,
   parameters: {
     layout: 'centered'
