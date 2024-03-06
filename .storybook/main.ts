@@ -25,9 +25,6 @@ const config: StorybookConfig = {
       use: [
         {
           loader: '@svgr/webpack'
-        },
-        {
-          loader: 'file-loader'
         }
       ],
       type: 'javascript/auto',
