@@ -3,7 +3,7 @@
     align-items: center;
 }
 
-.name {
+.logo__title {
     margin-left: 5.5px;
     font-family: var(--ff-primary);
     font-weight: 700;
