@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-left: 5.5px;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    color: rgb(69 70 78);
+}
