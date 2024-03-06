@@ -2,17 +2,19 @@ import React from 'react'
 import { IconProps } from './Icon.model'
 import icons from './assets'
 
-import './icon.styles.css'
-
-const Icon: React.FC<IconProps> = ({ icon, color, className, size, ...props }) => {
+const Icon: React.FC<IconProps> = ({ icon, size = '24', color, preserveAspectRatio, viewBox, fill, ...props }) => {
   const SvgIcon = icons[icon]
-  const iconStyle = {
-    color: color,
-    width: size,
-    height: size
-  }
-
-  return <SvgIcon style={{ ...iconStyle }} className={className} {...props} />
+  return (
+    <SvgIcon
+      height={size}
+      width={size}
+      color={color}
+      preserveAspectRatio={preserveAspectRatio}
+      fill={fill}
+      {...(viewBox && { viewBox })}
+      {...props}
+    />
+  )
 }
 
 export default Icon
