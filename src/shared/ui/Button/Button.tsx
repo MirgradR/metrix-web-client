@@ -1,21 +1,8 @@
 import React from 'react'
 
-import './button.css'
+import { ButtonProps } from './button.model'
 
-export type ButtonVariantTypes = 'primary' | 'primary_outline' | 'green' | 'green_outline' | 'danger' | 'danger_outline'
-
-type ButtonElementProps = React.ComponentProps<'button'>
-
-export interface ButtonProps extends ButtonElementProps {
-  label: string
-  size?: 180 | 375
-  variant?: ButtonVariantTypes
-  disabled?: boolean
-  className?: string
-  iconLeft?: React.ReactNode
-  iconRight?: React.ReactNode
-  onClick?: () => void
-}
+import './button.styles.css'
 
 const Button = ({
   variant = 'primary',

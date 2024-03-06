@@ -1,5 +1,10 @@
-import Button, { ButtonProps } from './Button'
+import React from 'react'
+
+import Button from './Button'
 import Icon from '../Icon/Icon'
+
+import { ButtonProps } from './button.model'
+import icons from '../Icon/assets'
 
 import '../../styles/theme.css'
 
@@ -38,19 +43,19 @@ export default {
     storybook_iconLeft: {
       description: 'Иконка слева от названия',
       control: 'select',
-      options: ['none', 'icon']
+      options: ['none', ...Object.keys(icons)]
     },
     storybook_iconRight: {
       description: 'Иконка справа от названия',
       control: 'select',
-      options: ['none', 'icon']
+      options: ['none', ...Object.keys(icons)]
     }
   }
 }
 
 type Props = {
-  storybook_iconLeft: 'Icon' & 'none'
-  storybook_iconRight: 'Icon' & 'none'
+  storybook_iconLeft: keyof typeof icons & 'none'
+  storybook_iconRight: keyof typeof icons & 'none'
 } & ButtonProps
 
 export const Default = (args: Props) => {
@@ -59,8 +64,8 @@ export const Default = (args: Props) => {
   return (
     <Button
       {...props}
-      iconLeft={storybook_iconLeft === 'none' ? null : <Icon />}
-      iconRight={storybook_iconRight === 'none' ? null : <Icon />}
+      iconLeft={storybook_iconLeft === 'none' ? null : <Icon icon={storybook_iconLeft} />}
+      iconRight={storybook_iconRight === 'none' ? null : <Icon icon={storybook_iconRight} />}
     />
   )
 }
