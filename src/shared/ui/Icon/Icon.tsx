@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconProps } from './Icon.model'
+import { IconProps } from './icon.model'
 import icons from './assets'
 
 const Icon: React.FC<IconProps> = ({
