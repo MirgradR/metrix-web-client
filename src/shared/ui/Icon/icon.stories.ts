@@ -1,21 +1,35 @@
-import type { Meta, StoryObj } from '@storybook/react'
 import Icon from './Icon'
+import icons from '../Icon/assets'
 
-const meta: Meta<typeof Icon> = {
+export default {
+  title: 'Metrix UI/Icon',
   component: Icon,
-  parameters: {
-    icon: 'home',
-    size: '24',
-    color: 'green'
+  tags: ['icons', 'common'],
+  argTypes: {
+    size: {
+      control: { type: 'select' },
+      options: [16, 20, 24, 36, 60]
+    },
+    icon: {
+      control: { type: 'select' },
+      options: Object.keys(icons)
+    },
+    color: {
+      control: { type: 'select' },
+      options: ['red', 'green', 'blue']
+    },
+    arg: {
+      control: { type: 'boolean' },
+      options: [false, true]
+    }
   }
 }
 
-export default meta
-type Story = StoryObj<typeof Icon>
-
-export const Primary: Story = {
+export const Default = {
   args: {
-    icon: 'search',
-    size: '24'
+    icon: 'home',
+    size: 24,
+    color: 'black',
+    arg: false
   }
 }
