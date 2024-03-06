@@ -1,5 +1,5 @@
 import icons from '@/shared/ui/Icon/assets'
-import { IconProps } from '@/shared/ui/Icon/Icon.model'
+import { IconProps } from '@/shared/ui/Icon/icon.model'
 import React from 'react'
 import './icon.styles.css'
 
