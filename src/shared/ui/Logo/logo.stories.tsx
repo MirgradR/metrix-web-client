@@ -3,9 +3,9 @@ import React from 'react'
 import '../../styles/theme.css'
 
 type Props = {
-  logoSize?: number
+  icon: string
+  size?: '16' | '20' | '24' | '36' | '52' | '60'
   withText: boolean
-  fontSize?: number
 }
 
 export default {
@@ -13,27 +13,22 @@ export default {
   component: Logo,
   tags: ['autodocs'],
   argTypes: {
-    logoSize: {
+    size: {
       type: 'number',
       description: 'Размер логотипа'
     },
     withText: {
       type: 'boolean',
       description: 'С текстовым названием или без'
-    },
-    fontSize: {
-      type: 'number',
-      description: 'Размер текста'
     }
   }
 }
 
-const Template = (args: Props) => <Logo {...args} />
+const Template = (args: Props) => <Logo icon="logo" {...args} />
 
 export const Default = Template.bind({})
 
 Default.args = {
-  logoSize: 52,
-  withText: true,
-  fontSize: 20
+  size: 52,
+  withText: true
 }
