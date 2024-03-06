@@ -2,7 +2,14 @@ import React from 'react'
 import { IconProps } from './Icon.model'
 import icons from './assets'
 
-const Icon: React.FC<IconProps> = ({ icon, size = '24', color, preserveAspectRatio, viewBox, fill, ...props }) => {
+const Icon: React.FC<IconProps> = ({
+  icon,
+  size = '24',
+  color,
+  preserveAspectRatio = 'xMidYMid meet',
+  viewBox = '0 0 24 24',
+  ...props
+}) => {
   const SvgIcon = icons[icon]
   return (
     <SvgIcon
@@ -10,8 +17,7 @@ const Icon: React.FC<IconProps> = ({ icon, size = '24', color, preserveAspectRat
       width={size}
       color={color}
       preserveAspectRatio={preserveAspectRatio}
-      fill={fill}
-      {...(viewBox && { viewBox })}
+      viewBox={viewBox}
       {...props}
     />
   )
