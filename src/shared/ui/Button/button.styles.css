@@ -72,8 +72,3 @@
 .btn-180 {
   width: 180px;
 }
-
-/* Если будет передоваться SVG, то цвет иконки будет совпадать с variant */
-.btn svg path {
-  stroke: currentcolor;
-}
