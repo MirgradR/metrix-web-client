@@ -1,8 +1,8 @@
 import icons from './assets'
 
-type IconType = keyof typeof icons
+export type IconType = keyof typeof icons
 
-type IconSize = '16' | '20' | '24' | '36' | '60'
+export type IconSize = '16' | '20' | '24' | '36' | '60'
 
 export interface IconProps {
   icon?: IconType
@@ -10,5 +10,4 @@ export interface IconProps {
   size?: IconSize
   preserveAspectRatio?: string
   viewBox?: string
-  fill?: string
 }
