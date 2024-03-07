@@ -1,5 +1,7 @@
+import { IconSize } from '../Icon/icon.model'
+
 export interface LogoProps {
   icon: string
-  size?: '16' | '20' | '24' | '36' | '52' | '60'
+  size?: IconSize
   withText?: boolean
 }

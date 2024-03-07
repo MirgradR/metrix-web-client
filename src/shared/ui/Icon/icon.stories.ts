@@ -8,7 +8,7 @@ export default {
   argTypes: {
     size: {
       control: { type: 'select' },
-      options: [16, 20, 24, 36, 60]
+      options: [16, 20, 24, 36, 52, 60]
     },
     icon: {
       control: { type: 'select' },
