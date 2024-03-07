@@ -8,6 +8,7 @@ import lock from './fi_lock.svg'
 import mail from './fi_mail.svg'
 import eye from './fi_eye.svg'
 import user from './fi_user.svg'
+import logo from './logo.svg'
 
 const icons = {
   home,
@@ -20,6 +21,7 @@ const icons = {
   mail,
   eye,
   user
+  logo
 }
 
 export default icons
