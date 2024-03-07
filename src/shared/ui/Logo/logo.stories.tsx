@@ -1,12 +1,5 @@
-import Logo from './logo'
-import React from 'react'
+import Logo from './Logo'
 import '../../styles/theme.css'
-
-type Props = {
-  icon: string
-  size?: '16' | '20' | '24' | '36' | '52' | '60'
-  withText: boolean
-}
 
 export default {
   title: 'Metrix UI/Logo',
@@ -15,20 +8,24 @@ export default {
   argTypes: {
     size: {
       type: 'number',
-      description: 'Размер логотипа'
+      description: 'Размер логотипа',
+      control: 'select',
+      options: [16, 20, 24, 36, 52, 60],
+      defaultValue: 50
     },
     withText: {
       type: 'boolean',
       description: 'С текстовым названием или без'
+    },
+    icon: {
+      defaultValue: 'logo'
     }
   }
 }
 
-const Template = (args: Props) => <Logo icon="logo" {...args} />
-
-export const Default = Template.bind({})
-
-Default.args = {
-  size: 52,
-  withText: true
+export const Default = {
+  args: {
+    withText: true,
+    size: 52
+  }
 }
