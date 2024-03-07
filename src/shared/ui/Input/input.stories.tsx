@@ -16,10 +16,6 @@ export default {
       control: { type: 'select' },
       options: ['text', 'password']
     },
-    width: {
-      control: { type: 'select' },
-      options: ['375px']
-    },
     storybook_iconLeft: {
       description: 'Иконка слева ',
       control: 'select',
@@ -51,7 +47,6 @@ export const Default = (args: Props) => {
 
 Default.args = {
   type: 'text',
-  width: '375px',
   placeholder: 'Email Address',
   storybook_iconLeft: 'none',
   storybook_iconRight: 'none'
