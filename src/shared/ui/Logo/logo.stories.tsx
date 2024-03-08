@@ -1,4 +1,5 @@
-import Logo from './Logo'
+import Logo from './logo'
+
 import '../../styles/theme.css'
 
 export default {

@@ -20,7 +20,7 @@ const icons = {
   lock,
   mail,
   eye,
-  user
+  user,
   logo
 }
 
