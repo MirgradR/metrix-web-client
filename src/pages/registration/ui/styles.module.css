@@ -1,0 +1,22 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  margin-top: 30px;
+  font-size: var(--fs-sh3);
+}
+
+.subtitle span {
+  color: var(--clr-primary-100);
+}
+
+.title {
+  margin-top: 10px;
+  line-height: 1.1;
+  font-size: var(--fs-p2);
+  color: var(--clr-black-30);
+  font-weight: 400;
+}

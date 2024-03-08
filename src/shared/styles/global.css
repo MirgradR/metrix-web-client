@@ -33,6 +33,10 @@ html {
   line-height: 1.5;
 }
 
+body {
+  background-color: var(--clr-secondary-2);
+}
+
 button,
 input,
 textarea,
