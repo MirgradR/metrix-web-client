@@ -1,0 +1,9 @@
+.main {
+  max-width: 438px;
+  margin-inline: auto;
+  margin-top: 120px;
+  padding: 44px 34px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: var(--clr-secondary-1); 
+}

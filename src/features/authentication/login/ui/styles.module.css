@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.form > * + * {
+  margin-top: 22px;
+}
+
+.form button {
+  align-self: center;
+  margin-top: 48px;
+}
+
+.recover {
+  align-self: end;
+  margin-top: 4px;
+  color: var(--clr-primary-100);
+}
+
+.recover:hover {
+  text-decoration: underline;
+}
+
+.signUp {
+  margin-top: 48px;
+}
+
+.signUp a {
+  color: var(--clr-primary-100);
+}
+
+.signUp a:hover {
+  text-decoration: underline;
+}
