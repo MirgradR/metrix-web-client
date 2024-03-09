@@ -7,7 +7,7 @@ const RegistrationPage = () => {
   return (
     <>
       <div className={styles.info}>
-        <Logo icon="logo" withText={false} />
+        <Logo withText={false} />
         <strong className={styles.subtitle}>
           Get Started with <span>Metrix</span>
         </strong>

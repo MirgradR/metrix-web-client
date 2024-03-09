@@ -17,9 +17,6 @@ export default {
     withText: {
       type: 'boolean',
       description: 'С текстовым названием или без'
-    },
-    icon: {
-      defaultValue: 'logo'
     }
   }
 }

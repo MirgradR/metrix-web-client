@@ -7,7 +7,7 @@ const LoginPage = () => {
   return (
     <>
       <div className={styles.info}>
-        <Logo icon="logo" withText={false} />
+        <Logo withText={false} />
         <strong className={styles.subtitle}>Welcome back!</strong>
         <h1 className={styles.title}>Login to your account</h1>
       </div>
