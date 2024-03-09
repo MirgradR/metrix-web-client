@@ -1,0 +1,12 @@
+.content-block {
+  padding: 11px 15px;
+  background-color: var(--clr-secondary-1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.content-block:hover {
+  background-color: var(--clr-primary-100);
+  color: var(--clr-secondary-1);
+}
