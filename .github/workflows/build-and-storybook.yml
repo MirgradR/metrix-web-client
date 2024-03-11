@@ -1,0 +1,23 @@
+name: build-and-storybook
+
+# This workflow is triggered on pull requests to the develop branch
+on:
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: npm install
+      - name: Build Development Version
+        run: npm run build:dev
+      - name: Build Storybook
+        run: npm run build-storybook
