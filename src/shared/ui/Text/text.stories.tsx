@@ -8,26 +8,13 @@ export default {
   },
   tags: ['autodocs'],
   argTypes: {
-    tag: {
+    type: {
       control: 'inline-radio',
       defaultValue: 'h1'
     },
-    fontSize: {
+    weight: {
       control: 'inline-radio',
-      defaultValue: '32'
-    },
-    fontWeight: {
-      control: 'inline-radio',
-      defaultValue: '500'
-    },
-    color: {
-      control: 'inline-radio',
-      options: ['red', 'green', 'blue'],
-      defaultValue: 'red'
-    },
-    fontFamily: {
-      control: 'inline-radio',
-      defaultValue: 'var(--ff-primary)'
+      defaultValue: 'regular'
     },
     children: {
       control: 'text',
@@ -38,11 +25,8 @@ export default {
 
 export const Default = {
   args: {
-    tag: 'h1',
-    fontSize: '64px',
-    fontWeight: '500',
-    color: 'red',
-    fontFamily: 'var(--ff-primary)',
+    type: 'h1',
+    weight: 'regular',
     children: 'Lorem Ipsum Lorem Ipsum'
   }
 }

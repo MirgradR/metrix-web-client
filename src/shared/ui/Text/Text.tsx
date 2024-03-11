@@ -1,9 +1,13 @@
 import React from 'react'
-import { TextProps } from './text.model'
-import '../../styles/theme.css'
+import { tagNamesByType, TextProps } from './text.model'
+import './text.styles.css'
 
-const Text: React.FC<TextProps> = ({ tag, children, ...props }: TextProps) => {
-  const style = { ...props }
-  return React.createElement(tag, { style }, children)
+const Text: React.FC<TextProps> = ({ tagName, type, weight = 'regular', children, ...additionalProps }: TextProps) => {
+  const props = {
+    className: [`${type}`, `${type}--${weight}`].join(' '),
+    ...additionalProps
+  }
+  return React.createElement(tagName || tagNamesByType[type], props, children)
 }
+
 export default Text
