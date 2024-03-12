@@ -1,7 +1,7 @@
 import { IconSize } from '../Icon/icon.model'
 
 export interface LogoProps {
-  icon: string
+  type?: 'main' | 'blue'
   size?: IconSize
   withText?: boolean
 }

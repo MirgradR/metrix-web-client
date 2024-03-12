@@ -1,5 +1,5 @@
 import { RegistrationForm } from '@/features/authentication/registration'
-import Logo from '@/shared/ui/Logo/logo'
+import Logo from '@/shared/ui/Logo/Logo'
 
 import styles from './styles.module.css'
 
@@ -7,7 +7,7 @@ const RegistrationPage = () => {
   return (
     <>
       <div className={styles.info}>
-        <Logo icon="logo" withText={false} />
+        <Logo size="60" />
         <strong className={styles.subtitle}>
           Get Started with <span>Metrix</span>
         </strong>

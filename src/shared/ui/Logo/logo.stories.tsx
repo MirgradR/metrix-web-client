@@ -1,5 +1,4 @@
-import Logo from './logo'
-
+import Logo from './Logo'
 import '../../styles/theme.css'
 
 export default {
@@ -18,8 +17,10 @@ export default {
       type: 'boolean',
       description: 'С текстовым названием или без'
     },
-    icon: {
-      defaultValue: 'logo'
+    type: {
+      type: 'string',
+      options: ['main', 'blue'],
+      description: 'Цветовой тип'
     }
   }
 }
@@ -27,6 +28,7 @@ export default {
 export const Default = {
   args: {
     withText: true,
-    size: 52
+    size: 52,
+    type: 'main'
   }
 }
