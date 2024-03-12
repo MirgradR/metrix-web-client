@@ -17,8 +17,9 @@ export default {
       type: 'boolean',
       description: 'С текстовым названием или без'
     },
-    isBlueLogo: {
-      type: 'boolean',
+    type: {
+      type: 'string',
+      options: ['main', 'blue'],
       description: 'Цветовой тип'
     }
   }
@@ -28,6 +29,6 @@ export const Default = {
   args: {
     withText: true,
     size: 52,
-    isBlueLogo: false
+    type: 'main'
   }
 }

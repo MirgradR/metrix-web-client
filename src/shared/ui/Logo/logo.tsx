@@ -4,8 +4,8 @@ import './logo.styles.css'
 import blueLogo from './img/blueLogo.png'
 import mainLogo from './img/mainLogo.png'
 
-const Logo = ({ size = '52', withText = false, isBlueLogo = false }: LogoProps) => {
-  const src = isBlueLogo ? blueLogo : mainLogo
+const Logo = ({ size = '52', withText = false, type = 'main' }: LogoProps) => {
+  const src = type === 'blue' ? blueLogo : mainLogo
 
   return (
     <div className="logo">
