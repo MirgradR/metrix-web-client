@@ -1,5 +1,4 @@
 import Logo from './Logo'
-
 import '../../styles/theme.css'
 
 export default {
@@ -17,6 +16,10 @@ export default {
     withText: {
       type: 'boolean',
       description: 'С текстовым названием или без'
+    },
+    isBlueLogo: {
+      type: 'boolean',
+      description: 'Цветовой тип'
     }
   }
 }
@@ -24,6 +27,7 @@ export default {
 export const Default = {
   args: {
     withText: true,
-    size: 52
+    size: 52,
+    isBlueLogo: false
   }
 }
