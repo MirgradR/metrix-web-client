@@ -6,6 +6,7 @@ import AuthLayout from './layouts/AuthLayout'
 import { MainPage } from '@/pages/main'
 import { LoginPage } from '@/pages/login'
 import { RegistrationPage } from '@/pages/registration'
+import DashboardLayout from './layouts/DashboardLayout'
 
 export const appRouter = createBrowserRouter([
   {
@@ -28,5 +29,9 @@ export const appRouter = createBrowserRouter([
         <RegistrationPage />
       </AuthLayout>
     )
+  },
+  {
+    path: '/dashboard',
+    element: <DashboardLayout />
   }
 ])

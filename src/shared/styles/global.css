@@ -33,9 +33,9 @@ html {
   line-height: 1.5;
 }
 
-body {
+/* body {
   background-color: var(--clr-secondary-2);
-}
+} */
 
 button,
 input,
