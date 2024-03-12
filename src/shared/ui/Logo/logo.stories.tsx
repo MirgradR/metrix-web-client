@@ -1,4 +1,4 @@
-import Logo from './logo'
+import Logo from './Logo'
 
 import '../../styles/theme.css'
 
@@ -17,9 +17,6 @@ export default {
     withText: {
       type: 'boolean',
       description: 'С текстовым названием или без'
-    },
-    icon: {
-      defaultValue: 'logo'
     }
   }
 }
