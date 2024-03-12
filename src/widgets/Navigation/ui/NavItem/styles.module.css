@@ -1,0 +1,51 @@
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: var(--fs-p2);
+  color: var(--clr-black-50);
+  transition: .3s ease-in;
+}
+
+.link > svg {
+  flex-shrink: 0;
+}
+
+.link:is(:hover, .active) {
+  background-color: var(--clr-primary-100);
+  color: var(--clr-secondary-1)
+}
+
+/* Под вопросом */
+.link:is(:hover, .active) svg {
+  color: #fff;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: var(--fs-l1);
+  border-radius: 50%;
+  color: var(--clr-black-100);
+  background-color: var(--clr-secondary-100);
+}
+
+:global(.nav:hover) .link {
+  padding: 16px 20px;
+}
+
+:global(.nav) .notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+:global(.nav:hover) .notification {
+  position: static
+}

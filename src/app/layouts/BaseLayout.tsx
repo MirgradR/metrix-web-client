@@ -1,11 +1,16 @@
 import { Outlet } from 'react-router-dom'
 
+import { Navigation } from '@/widgets/Navigation'
+
 function BaseLayout() {
   return (
     <>
-      <header>HEADER</header>
       <div className="container">
-        <Outlet />
+        <Navigation />
+        <div className="main-wrapper">
+          <header>HEADER</header>
+          <Outlet />
+        </div>
       </div>
     </>
   )
