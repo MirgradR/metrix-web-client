@@ -1,12 +1,11 @@
 import React from 'react'
 import { LogoProps } from './logo.model'
 import './logo.styles.css'
-import Icon from '../Icon/Icon'
 
-const Logo = ({ size = '52', withText = true }: LogoProps) => {
+const Logo = ({ size = '52', withText = false }: LogoProps) => {
   return (
     <div className="logo">
-      <Icon icon={'logo'} size={size} viewBox={'0 0 52 52'} />
+      <img width={size} height={size} src="./img/mainLogo.png" />
       {withText && <span className="logo__title">Metrix</span>}
     </div>
   )
