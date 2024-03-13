@@ -74,4 +74,8 @@
   
   /* font-family для параграфов и лейблов */
   --ff-secondary: 'Inter', sans-serif;
+
+  /* размеры для сайдбара */
+  --sidebar-width-large: 296px;
+  --sidebar-width-mini: 88px;
 }

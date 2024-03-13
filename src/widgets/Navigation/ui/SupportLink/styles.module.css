@@ -1,0 +1,13 @@
+.support {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  border-radius: 16px;
+  font-size: var(--fs-p2);
+  padding: 11px 16px;
+  background-color: rgb(94 99 102 / 10%);
+}
+
+.support svg {
+  flex-shrink: 0;
+}

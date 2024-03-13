@@ -8,6 +8,16 @@ import lock from './fi_lock.svg'
 import mail from './fi_mail.svg'
 import eye from './fi_eye.svg'
 import user from './fi_user.svg'
+import bag from './bag.svg'
+import category from './category.svg'
+import chat from './chat.svg'
+import chevron_right from './fi_chevron-right.svg'
+import gift from './fi_gift.svg'
+import headphones from './fi_headphones.svg'
+import folder from './folder.svg'
+import logout from './logout.svg'
+import settings from './settings.svg'
+import two_users from './two_users.svg'
 
 const icons = {
   home,
@@ -19,7 +29,17 @@ const icons = {
   lock,
   mail,
   eye,
-  user
+  user,
+  bag,
+  category,
+  chat,
+  chevron_right,
+  gift,
+  headphones,
+  folder,
+  logout,
+  settings,
+  two_users
 }
 
 export default icons

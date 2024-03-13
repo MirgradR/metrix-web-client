@@ -1,0 +1,31 @@
+.gift {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px 12px;
+  border-radius: 16px;
+  font-size: var(--fs-p2);
+  background-color: rgb(255 204 145 / 20%);
+}
+
+.gift svg {
+  flex-shrink: 0;
+}
+
+.gift > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  color: var(--clr-black-100)
+}
+
+.gift > div:last-child {
+  font-size: var(--fs-l1);
+  color: var(--clr-black-40)
+}
+
+:global(.nav:hover) .gift {
+  padding: 11px 20px;
+}
