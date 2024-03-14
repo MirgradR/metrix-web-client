@@ -18,6 +18,7 @@ export type weightTypes = 'bold' | 'medium' | 'regular'
 export type typeTypes =
   | 'subHeading1'
   | 'subHeading2'
+  | 'subHeading3'
   | 'h1'
   | 'h2'
   | 'h3'

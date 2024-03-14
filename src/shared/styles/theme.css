@@ -34,6 +34,7 @@
   /* color для второстепенного цвета */
   --clr-secondary-1: #fff;
   --clr-secondary-2: #f4f5fa;
+  --clr-secondary-3: #e1e2e9;
   --clr-secondary-10: #fef9f2;
   --clr-secondary-20: #fef5ea;
   --clr-secondary-30: #fff2e2;
@@ -56,6 +57,7 @@
   --clr-black-80: #33343a;
   --clr-black-90: #2c2d33;
   --clr-black-100: #1c1d22;
+  --clr-black-110: #000;
 
   /* color для зеленого цвета */
   --clr-green-10: #458B71;
