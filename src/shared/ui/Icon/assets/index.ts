@@ -18,6 +18,7 @@ import folder from './folder.svg'
 import logout from './logout.svg'
 import settings from './settings.svg'
 import two_users from './two_users.svg'
+import plus from './fi_plus.svg'
 
 const icons = {
   home,
@@ -39,7 +40,8 @@ const icons = {
   folder,
   logout,
   settings,
-  two_users
+  two_users,
+  plus
 }
 
 export default icons

@@ -1,7 +1,6 @@
 .content-block {
   background-color: var(--clr-secondary-1);
   border-radius: 12px;
-  cursor: pointer;
   transition: .2s ease-in;
 }
 
