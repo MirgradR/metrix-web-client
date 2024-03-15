@@ -1,31 +1,30 @@
 .column {
-	display: flex;
-	flex-direction: column;
-	flex: 1
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .title {
-	margin-bottom: 8px;
-	color: var(--clr-black-30);
-	
+  margin-bottom: 8px;
+  color: var(--clr-black-30);
 }
 
-.valueBlock{
-	align-items: center;
-	justify-content: left;
-	display: flex;
-	flex-direction: row;
-	flex: 1
+.valueBlock {
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
 .value {
-	margin-right: 7px;
+  margin-right: 7px;
 }
 
 .differencePositive {
-	color: var(--clr-action-go);
+  color: var(--clr-action-go);
 }
 
 .differenceNegative {
-	color: var(--clr-action-stop);
+  color: var(--clr-action-stop);
 }
