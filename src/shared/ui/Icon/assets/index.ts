@@ -8,6 +8,10 @@ import lock from './fi_lock.svg'
 import mail from './fi_mail.svg'
 import eye from './fi_eye.svg'
 import user from './fi_user.svg'
+import chevronDown from './fi_chevron-down.svg'
+import twoUser_light from './2User-light.svg'
+import shoppingCart from './fi_shopping-cart.svg'
+import graph_light from './Graph-light.svg'
 import bag from './bag.svg'
 import category from './category.svg'
 import chat from './chat.svg'
@@ -31,7 +35,11 @@ const icons = {
   mail,
   eye,
   user,
+  chevronDown,
+  twoUser_light,
   bag,
+  shoppingCart,
+  graph_light,
   category,
   chat,
   chevron_right,

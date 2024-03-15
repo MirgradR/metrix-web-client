@@ -5,8 +5,11 @@
 }
 
 .content-block:hover {
-  background-color: var(--clr-primary-100);
-  color: var(--clr-secondary-1);
+	background-color: var(--clr-primary-100);
+}
+
+.content-block:hover * {
+	color: var(--clr-secondary-1);
 }
 
 .small {

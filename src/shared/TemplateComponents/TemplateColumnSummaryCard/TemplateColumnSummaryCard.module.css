@@ -1,0 +1,31 @@
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1
+}
+
+.title {
+	margin-bottom: 8px;
+	color: var(--clr-black-30);
+	
+}
+
+.valueBlock{
+	align-items: center;
+	justify-content: left;
+	display: flex;
+	flex-direction: row;
+	flex: 1
+}
+
+.value {
+	margin-right: 7px;
+}
+
+.differencePositive {
+	color: var(--clr-action-go);
+}
+
+.differenceNegative {
+	color: var(--clr-action-stop);
+}
