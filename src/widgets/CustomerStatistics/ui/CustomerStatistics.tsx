@@ -1,4 +1,4 @@
-import TemplateColumnSummaryCard from '@/shared/TemplateComponents/TemplateColumnSummaryCard'
+import TemplateColumnSummaryCard from '@/shared/ui/TemplateColumnSummaryCard'
 import { CustomerStatisticsProps } from './customerStatistics.model'
 import React from 'react'
 import Block from '@/shared/ui/Block/Block'
@@ -8,7 +8,7 @@ import styles from './styles.module.css'
 
 const CustomerStatistics = ({ period, customers, diffCustomers, active, diffActive }: CustomerStatisticsProps) => {
   return (
-    <Block>
+    <Block className={styles.blockHover}>
       <div className={styles.summaryCardHeader}>
         <div className={styles.iconBlock}>
           <Icon icon="twoUser_light" size="20" />
@@ -26,8 +26,8 @@ const CustomerStatistics = ({ period, customers, diffCustomers, active, diffActi
         </Text>
       </div>
       <div className={styles.summaryColumns}>
-        {TemplateColumnSummaryCard({ title: 'Customers', value: customers, difference: diffCustomers })}
-        {TemplateColumnSummaryCard({ title: 'Active', value: active, difference: diffActive })}
+        <TemplateColumnSummaryCard title="Customers" value={customers} difference={diffCustomers} />
+        <TemplateColumnSummaryCard title="Active" value={active} difference={diffActive} />
       </div>
     </Block>
   )

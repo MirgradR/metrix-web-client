@@ -38,6 +38,6 @@
 	flex-grow: 0;
 }
 
-.iconBlock--blueBackground{
-	background: rgb(85 112 241 / 12%);
+.blockHover:hover * {
+	color: var(--clr-secondary-1);
 }
