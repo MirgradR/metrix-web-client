@@ -1,14 +1,14 @@
 import Text from '@/shared/ui/Text/Text'
-import styles from './TemplateColumnSummaryCard.module.css'
+import styles from './summaryCardValues.module.css'
 import React from 'react'
 
-interface TemplateColumnSummaryCardProps {
+interface SummaryCardValuesProps {
   title: string
   value: number
   difference: string
 }
 
-const TemplateColumnSummaryCard = ({ title, value, difference }: TemplateColumnSummaryCardProps) => {
+const SummaryCardValues = ({ title, value, difference }: SummaryCardValuesProps) => {
   const differenceNum = parseFloat(difference)
   const differenceClass = differenceNum > 0 ? 'differencePositive' : 'differenceNegative'
   return (
@@ -34,4 +34,4 @@ const TemplateColumnSummaryCard = ({ title, value, difference }: TemplateColumnS
     </div>
   )
 }
-export default TemplateColumnSummaryCard
+export default SummaryCardValues

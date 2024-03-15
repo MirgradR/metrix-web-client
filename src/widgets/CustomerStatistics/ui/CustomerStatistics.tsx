@@ -1,4 +1,4 @@
-import TemplateColumnSummaryCard from '@/shared/ui/TemplateColumnSummaryCard'
+import SummaryCardValues from '@/shared/ui/SummaryCardValues'
 import { CustomerStatisticsProps } from './customerStatistics.model'
 import React from 'react'
 import Block from '@/shared/ui/Block/Block'
@@ -26,8 +26,8 @@ const CustomerStatistics = ({ period, customers, diffCustomers, active, diffActi
         </Text>
       </div>
       <div className={styles.summaryColumns}>
-        <TemplateColumnSummaryCard title="Customers" value={customers} difference={diffCustomers} />
-        <TemplateColumnSummaryCard title="Active" value={active} difference={diffActive} />
+        <SummaryCardValues title="Customers" value={customers} difference={diffCustomers} />
+        <SummaryCardValues title="Active" value={active} difference={diffActive} />
       </div>
     </Block>
   )

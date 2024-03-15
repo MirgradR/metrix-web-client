@@ -1,4 +1,4 @@
-import classNames from '@/shared/lib/utils/classNames'
+import classNames from '../../lib/utils/classNames'
 import React from 'react'
 
 import { BlockProps } from './block.model'
