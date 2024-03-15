@@ -1,18 +1,18 @@
 .content-block {
-	background-color: var(--clr-secondary-1);
-	border-radius: 12px;
-	transition: .2s ease-in;
+  background-color: var(--clr-secondary-1);
+  border-radius: 12px;
+  transition: .2s ease-in;
 }
 
 .content-block:hover {
-	background-color: var(--clr-primary-100);
-	color: var(--clr-secondary-1);
+  background-color: var(--clr-primary-100);
+  color: var(--clr-secondary-1);
 }
 
 .small {
-	padding: 11px 15px;
+  padding: 11px 15px;
 }
 
 .big {
-	padding: 20px;
+  padding: 20px;
 }
