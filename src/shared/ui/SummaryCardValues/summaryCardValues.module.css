@@ -9,6 +9,10 @@
   color: var(--clr-black-30);
 }
 
+.title--red {
+  color: var(--clr-action-stop);
+}
+
 .valueBlock {
   align-items: center;
   justify-content: left;
