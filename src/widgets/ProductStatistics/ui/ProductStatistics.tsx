@@ -1,4 +1,3 @@
-import classNames from '@/shared/lib/utils/classNames'
 import SummaryCardValues from '@/shared/ui/SummaryCardValues'
 import React from 'react'
 import Block from '@/shared/ui/Block/Block'
@@ -11,7 +10,7 @@ const ProductStatistics = ({ period, allProducts, diffAllProducts, active, diffA
   return (
     <Block className={styles.blockHover}>
       <div className={styles.summaryCardHeader}>
-        <div className={classNames(styles.iconBlock, styles['iconBlock--blueBackground'])}>
+        <div className={styles.iconBlock}>
           <Icon icon="folder" size="20" />
         </div>
         <Text type="label1" weight="regular">
