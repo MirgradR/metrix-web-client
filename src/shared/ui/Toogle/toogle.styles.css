@@ -1,0 +1,91 @@
+.toogle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    position: relative;
+    font-size: var(--fs-p2);
+    line-height: 16.94px;
+    font-weight: 400;
+}
+
+.toogle input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch {
+    display: inline-block;
+    width: 40px;
+    position: relative;
+    background-color: var(--clr-primary-10);
+    border-radius: 102px;
+    transition: .3s;
+}
+
+input:checked ~ .switch {
+    background-color: var(--clr-primary-40);
+}
+
+.switch_slim {
+    height: 12px;
+}
+
+.switch_bold {
+    height: 20px;
+}
+
+.switch::before {
+    position: absolute;
+    content: '';
+    background-color: #BBC5CB;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+input:checked ~ .switch::before {
+    background-color: var(--clr-primary-100);
+}
+
+.switch_slim::before {
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px);
+    left: 0;
+}
+
+.switch_bold::before {
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 2px;
+}
+
+input:checked ~ .switch_slim::before {
+    left: 20px;
+}
+
+input:checked ~ .switch_bold::before {
+    left: 22px;
+}
+
+.label {
+    color: #83898C;
+}
+
+input:checked ~ .label {
+    color: #2B2F32;
+}
+
+.description {
+    display: inline-block;
+    grid-area: desc;
+    color: #ABAFB1;
+    margin-top: 20px;
+    font-size: var(--fs-p2);
+    line-height: 16.94px;
+    font-weight: 400;
+}
