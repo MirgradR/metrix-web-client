@@ -1,0 +1,14 @@
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  margin-top: 34px;
+  font-size: var(--fs-p2);
+  color: var(--clr-action-stop);
+}
+
+:global(nav:hover) .logout {
+  justify-content: flex-start;
+  margin-left: 12px;
+}

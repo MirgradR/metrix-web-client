@@ -1,0 +1,83 @@
+:root {
+  /* font-size для заголовков */
+  --fs-h1: 64px;
+  --fs-h2: 52px;
+  --fs-h3: 44px;
+
+  /* font-size для подзаголовков */
+  --fs-sh1: 32px;
+  --fs-sh2: 28px;
+  --fs-sh3: 20px;
+
+  /* font-size для параграфов */
+  --fs-p1: 16px;
+  --fs-p2: 14px;
+
+  /* font-size для лейблов */
+  --fs-l1: 12px;
+  --fs-l2: 11px;
+  --fs-l3: 10px;
+
+  /* color для главного цвета */
+  --clr-primary-10: #dbdeee;
+  --clr-primary-20: #c4cae8;
+  --clr-primary-30: #b6bfe8;
+  --clr-primary-40: #abb5e9;
+  --clr-primary-50: #97a5eb;
+  --clr-primary-60: #8899e9;
+  --clr-primary-70: #7c8fec;
+  --clr-primary-80: #6d83ec;
+  --clr-primary-90: #6078ec;
+  --clr-primary-100: #5570f1;
+  --clr-primary-110: #5B6EC6;
+
+  /* color для второстепенного цвета */
+  --clr-secondary-1: #fff;
+  --clr-secondary-2: #f4f5fa;
+  --clr-secondary-3: #e1e2e9;
+  --clr-secondary-10: #fef9f2;
+  --clr-secondary-20: #fef5ea;
+  --clr-secondary-30: #fff2e2;
+  --clr-secondary-40: #fff0de;
+  --clr-secondary-50: #ffead1;
+  --clr-secondary-60: #ffe5c8;
+  --clr-secondary-70: #ffdfba;
+  --clr-secondary-80: #ffdaae;
+  --clr-secondary-90: #ffd29e;
+  --clr-secondary-100: #ffcc91;
+
+  /* color для черного цвета */
+  --clr-black-10: #bec0ca;
+  --clr-black-20: #a6a8b1;
+  --clr-black-30: #8b8d97;
+  --clr-black-40: #6e7079;
+  --clr-black-50: #53545c;
+  --clr-black-60: #45464e;
+  --clr-black-70: #37393f;
+  --clr-black-80: #33343a;
+  --clr-black-90: #2c2d33;
+  --clr-black-100: #1c1d22;
+  --clr-black-110: #000;
+
+  /* color для зеленого цвета */
+  --clr-green-10: #458B71;
+  --clr-green-20: #32936F;
+
+  /* color для крсного цвета */
+  --clr-danger-10: #F57E77;
+  --clr-danger-20: #C95F58;
+
+  /* color для action */
+  --clr-action-go: #519c66;
+  --clr-action-stop: #cc5f5f;
+
+  /* font-family для заголовков и подзаголовков */
+  --ff-primary: 'Poppins', sans-serif;
+  
+  /* font-family для параграфов и лейблов */
+  --ff-secondary: 'Inter', sans-serif;
+
+  /* размеры для сайдбара */
+  --sidebar-width-large: 296px;
+  --sidebar-width-mini: 88px;
+}

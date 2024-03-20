@@ -1,0 +1,52 @@
+.summaryCardHeader{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.summaryCardHeader:hover{
+  color: var(--clr-secondary-1)
+}
+
+.summaryColumns {
+  display: flex;
+  gap: 32px;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #BEC0CA;
+	
+}
+
+.period .text {
+  margin-right: 8px;
+}
+
+.iconBlock{
+  background-color: rgb(255 204 145 / 16%);
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.blockHover:hover * {
+  color: var(--clr-secondary-1);
+}
+
+.blockHover:hover .iconBlock {
+  background: rgb(255 255 255 / 16%);
+}
+
+.iconBlock--blueBackground{
+  background: rgb(85 112 241 / 12%);
+  color: rgb(85 112 241)
+}

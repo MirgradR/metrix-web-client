@@ -1,0 +1,50 @@
+.title {
+  margin-bottom: 160px;
+  color: var(--clr-black-60);
+}
+
+.iconWrapper {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-secondary-3);
+  background-color:var(--clr-secondary-2);
+}
+
+.info {
+  max-width: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.infoTitle {
+  color: var(--clr-black-110)
+}
+
+.description {
+  text-align: center;
+  color: var(--clr-black-30)
+}
+
+.btn {
+  font-size: var(--fs-p1);
+  margin-top: 24px;
+}
+
+:global(.content-block:hover) :is(.description, .title, .infoTitle) {
+  color: var(--clr-secondary-1)
+}
+
+:global(.content-block:hover) .btn {
+  background-color: var(--clr-secondary-1);
+  color: var(--clr-primary-100);
+}

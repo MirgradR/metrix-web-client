@@ -1,0 +1,74 @@
+.btn {
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: var(--fs-p1);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  line-height: 1;
+  font-size: var(--fs-sh3);
+}
+
+.btn:disabled {
+  opacity: .6;
+}
+
+.btn-primary {
+  color: var(--clr-secondary-1);
+  background-color: var(--clr-primary-100);
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: var(--clr-primary-110);
+  box-shadow: inset 0 4px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.btn-primary_outline {
+  color: var(--clr-primary-100);
+}
+
+.btn-green {
+  color: var(--clr-secondary-1);
+  background-color: var(--clr-green-20);
+}
+
+.btn-green:active:not(:disabled) {
+  background-color: var(--clr-green-10);
+  box-shadow: inset 0 4px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.btn-green_outline {
+  color: var(--clr-green-20);
+}
+
+.btn-danger {
+  color: var(--clr-secondary-1);
+  background-color: var(--clr-danger-10);
+}
+
+.btn-danger:active:not(:disabled) {
+  background-color: var(--clr-danger-20);
+  box-shadow: inset 0 4px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.btn-danger_outline {
+  color: var(--clr-danger-10);
+}
+
+.btn-primary_outline, 
+.btn-green_outline, 
+.btn-danger_outline {
+  background-color: transparent;
+  border-color: currentcolor;
+}
+
+.btn-375 {
+  width: 375px;
+}
+
+.btn-180 {
+  width: 180px;
+}

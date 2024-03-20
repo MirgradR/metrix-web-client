@@ -1,0 +1,80 @@
+.h1, .h2, .h3, .subHeading1, .subHeading2, .subHeading3, .paragraph1, .paragraph2, .label1, .label2, .label3 {
+	text-align: left;
+	letter-spacing: 0;
+}
+
+.h1, .h2, .h3, .subHeading1, .subHeading2, .subHeading3 {
+	font-family: var(--ff-primary);
+}
+
+.paragraph1, .paragraph2, .label1, .label2, .label3 {
+	font-family: var(--ff-secondary);
+}
+
+.h1 {
+	font-size: 64px;
+	line-height: 96px;
+}
+
+.h2 {
+	font-size: 52px;
+	line-height: 78px;
+}
+
+.h3 {
+	font-size: 44px;
+	line-height: 66px;
+}
+
+.subHeading1 {
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.subHeading2 {
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.subHeading3 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.paragraph1 {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.paragraph2 {
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.label1 {
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.label2 {
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.label3 {
+	font-size: 10px;
+	line-height: 12px;
+}
+
+
+.h1--bold, .h2--bold, .h3--bold, .subHeading1--bold, .subHeading2--bold, .subHeading3--bold, .paragraph1--bold, .paragraph2--bold, .label1--bold, .label2--bold, .label3--bold {
+	font-weight: 700;
+}
+
+.h1--medium, .h2--medium, .h3--medium, .subHeading1--medium, .subHeading2--medium, .subHeading3--medium, .paragraph1--medium, .paragraph2--medium, .label1--medium, .label2--medium, .label3--medium{
+	font-weight: 500;
+}
+
+.h1--regular, .h2--regular, .h3--regular, .subHeading1--regular, .subHeading2--regular, .subHeading3--regular, .paragraph1--regular, .paragraph2--regular, .label1--regular, .label2--regular, .label3--regular {
+	font-weight: 400;
+}

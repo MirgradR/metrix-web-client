@@ -1,0 +1,32 @@
+.inputContainer {
+	position: static;
+	height: 52px;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	margin: 8px 0;
+	border-radius: 8px;
+	background: #EFF1F999;
+}
+
+.input {
+	flex-grow: 1;
+	height: 36px;
+	background-color: transparent;
+	border: none;
+	padding: 0 10px;
+}
+
+.iconLeft, .iconRight {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iconLeft {
+	margin-right: 8px;
+}
+
+.iconRight {
+	margin-left: 8px;
+}
