@@ -1,0 +1,25 @@
+.avatar {
+    display: inline-block;
+    background-color: var(--clr-black-10);
+    border-radius: 12px;
+}
+
+.avatar_small {
+    width: 32px;
+    height: 32px;
+}
+
+.avatar_medium {
+    width: 48px;
+    height: 48px;
+}
+
+.avatar_large {
+    width: 60px;
+    height: 60px;
+}
+
+.avatar_extraLarge {
+    width: 170px;
+    height: 170px;
+}

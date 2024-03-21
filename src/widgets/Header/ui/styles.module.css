@@ -1,0 +1,11 @@
+.header {
+    padding: 21px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
