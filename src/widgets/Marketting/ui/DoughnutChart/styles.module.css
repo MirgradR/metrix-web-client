@@ -1,0 +1,40 @@
+.labels {
+  display: flex;
+  justify-content: center;
+  column-gap: 38px;
+}
+
+.label {
+  display: flex;
+  column-gap: 8px;
+  align-items: baseline;
+  padding: 8px;
+  color: var(--clr-black-20);
+  border-radius: 8px;
+  background-color: var(--clr-secondary-1);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.wrapper {
+  position: relative;
+  margin-inline: auto;
+  width: 205px;
+  height: 205px;
+  border: 60px solid var(--clr-secondary-4);;
+  border-radius: 50%;
+}
+
+.wrapper.wrapper {
+  margin-top: 24px;
+}
+
+.doughnut {
+  position: absolute;
+  top: -51%;
+  left: -51%;
+}

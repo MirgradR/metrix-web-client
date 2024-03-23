@@ -1,0 +1,22 @@
+.container > * + * {
+  margin-top: 12px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--clr-black-60);
+}
+
+.period {
+  display: flex;
+  column-gap: 7px;
+  color: var(--clr-black-10)
+}
+
+.container:hover :is(.period, .title) {
+  color: var(--clr-secondary-1);
+}
