@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 
 import { Navigation } from '@/widgets/Navigation'
+import { Header } from '@/widgets/Header'
 
 function BaseLayout() {
   return (
@@ -8,7 +9,7 @@ function BaseLayout() {
       <div className="container">
         <Navigation />
         <div className="main-wrapper">
-          <header>HEADER</header>
+          <Header />
           <Outlet />
         </div>
       </div>
