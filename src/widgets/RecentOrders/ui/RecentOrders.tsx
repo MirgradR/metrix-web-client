@@ -2,15 +2,18 @@ import Block from '@/shared/ui/Block/Block'
 import Icon from '@/shared/ui/Icon/Icon'
 import Button from '@/shared/ui/Button/Button'
 import Text from '@/shared/ui/Text/Text'
+import { RecentOrdersProps } from '../model/recentOrders.model'
 
 import styles from './styles.module.css'
 
-const RecentOrders = () => {
+const RecentOrders = ({ title, className }: RecentOrdersProps) => {
   return (
-    <Block>
-      <Text type="paragraph2" tagName="h2" weight="medium" className={styles.title}>
-        Recent Orders
-      </Text>
+    <Block className={className ? className : ''}>
+      {title && (
+        <Text type="paragraph2" tagName="h2" weight="medium" className={styles.title}>
+          Recent Orders
+        </Text>
+      )}
       <div className={styles.iconWrapper}>
         <Icon icon="bag" size="60" color="#BEC0CA" />
       </div>

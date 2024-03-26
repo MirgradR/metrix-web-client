@@ -6,15 +6,7 @@ import Text from '@/shared/ui/Text/Text'
 import styles from '@/shared/ui/SummaryCard/styles.module.css'
 import { AllOrdersProps } from './AllOrders.model'
 
-const AllOrders = ({
-  period,
-  allOrders,
-  diffAllOrders,
-  pending,
-  diffPending,
-  completed,
-  diffCompleted
-}: AllOrdersProps) => {
+const AllOrders = ({ period, data }: AllOrdersProps) => {
   return (
     <Block className={styles.blockHover}>
       <div className={styles.summaryCardHeader}>
@@ -33,9 +25,9 @@ const AllOrders = ({
         </Text>
       </div>
       <div className={styles.summaryColumns}>
-        <SummaryCardValues title="All Orders" value={allOrders} difference={diffAllOrders} />
-        <SummaryCardValues title="pending" value={pending} difference={diffPending} />
-        <SummaryCardValues title="Completed" value={completed} difference={diffCompleted} />
+        {data.map((item, index) => (
+          <SummaryCardValues key={index} title={item.title} value={item?.value} difference={item?.difference} />
+        ))}
       </div>
     </Block>
   )
