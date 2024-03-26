@@ -1,10 +1,11 @@
 import { SummaryCard } from '@/shared/ui/SummaryCard/summaryCard.model'
 
+interface OrdersDataProps {
+  value: number
+  title?: string
+  difference?: string
+}
+
 export interface AllOrdersProps extends SummaryCard {
-  allOrders: number
-  diffAllOrders?: string
-  pending: number
-  diffPending?: string
-  completed: number
-  diffCompleted?: string
+  data: OrdersDataProps[]
 }

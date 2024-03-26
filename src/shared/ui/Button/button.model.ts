@@ -4,7 +4,7 @@ export type ButtonVariantTypes = 'primary' | 'primary_outline' | 'green' | 'gree
 
 export interface ButtonProps extends React.ComponentProps<'button'> {
   label: string
-  size?: 180 | 375
+  size?: 180 | 200 | 375
   variant?: ButtonVariantTypes
   className?: string
   iconLeft?: React.ReactNode
