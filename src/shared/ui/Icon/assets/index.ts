@@ -23,6 +23,7 @@ import logout from './logout.svg'
 import settings from './settings.svg'
 import two_users from './two_users.svg'
 import plus from './fi_plus.svg'
+import notification from './notification.svg'
 
 const icons = {
   home,
@@ -49,7 +50,8 @@ const icons = {
   logout,
   settings,
   two_users,
-  plus
+  plus,
+  notification
 }
 
 export default icons

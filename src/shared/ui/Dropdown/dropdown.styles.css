@@ -1,0 +1,19 @@
+.dropDown {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--clr-black-100);
+    width: 154px;
+    position: relative;
+}
+
+.dropdown__list {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 154px;
+    border-radius: 8px;
+    list-style-type: none;
+    border: 1px solid rgb(0 0 0 / 15%);
+    overflow: hidden;
+}
