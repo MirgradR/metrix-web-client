@@ -24,6 +24,10 @@ import settings from './settings.svg'
 import two_users from './two_users.svg'
 import plus from './fi_plus.svg'
 import notification from './notification.svg'
+import send from './send.svg'
+import calendar from './calendar.svg'
+import filter from './filter.svg'
+import sort from './sort.svg'
 
 const icons = {
   home,
@@ -51,7 +55,11 @@ const icons = {
   settings,
   two_users,
   plus,
-  notification
+  notification,
+  send,
+  calendar,
+  filter,
+  sort
 }
 
 export default icons

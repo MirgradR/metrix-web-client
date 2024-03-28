@@ -10,11 +10,26 @@ export default {
   parameters: {
     layout: 'centered'
   },
-  tags: ['autodocs']
+  tags: ['autodocs'],
+  argTypes: {
+    selectedItem: {
+      description: 'Текстовое содержание select',
+      control: 'text',
+      defaultValue: 'Select'
+    },
+    type: {
+      description: 'Внешний вид select',
+      control: 'inline-radio',
+      defaultValue: 'default'
+    }
+  }
 }
 
 export const Default = (props: SelectProps) => {
   return <Select {...props} />
 }
 
-Default.args = {}
+Default.args = {
+  selectedItem: 'Select',
+  type: 'default'
+}

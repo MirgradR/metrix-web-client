@@ -1,0 +1,18 @@
+.tFilters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid #E1E2E9;
+    border-bottom: 1px solid #E1E2E9;
+    gap: 10px;
+}
+
+.tRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    color: var(--clr-black-40);
+    font-size: var(--fs-p2);
+}

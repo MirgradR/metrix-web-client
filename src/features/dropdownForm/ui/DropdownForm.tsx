@@ -1,9 +1,9 @@
-import Dropdown from '@/shared/ui/Dropdown/Dropdown'
-import { useRef, useState } from 'react'
-import { NavProps } from './nav.model'
+import React, { useRef, useState } from 'react'
 import useOnClickOutside from '@/shared/lib/hooks/useOnClickOutside'
+import Dropdown from '@/shared/ui/Dropdown/Dropdown'
+import { DropdownFromProps } from './dropdownForm.model'
 
-const Nav = ({ data = ['Nanny’s Shop', 'Colors Shop', 'Flowers Shop'] }: NavProps) => {
+const DropdownForm = ({ data = ['Nanny’s Shop', 'Colors Shop', 'Flowers Shop'] }: DropdownFromProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedItem, setSelectedItem] = useState(data[1])
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -23,4 +23,4 @@ const Nav = ({ data = ['Nanny’s Shop', 'Colors Shop', 'Flowers Shop'] }: NavPr
   )
 }
 
-export default Nav
+export default DropdownForm
