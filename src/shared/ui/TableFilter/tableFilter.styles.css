@@ -1,0 +1,25 @@
+.filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--clr-black-90);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.icon {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-reverse {
+    transform: rotate(180deg);
+}
