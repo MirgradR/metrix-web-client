@@ -1,0 +1,12 @@
+.theader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}

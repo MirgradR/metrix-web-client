@@ -1,0 +1,7 @@
+.tbody {
+    color: var(--clr-black-40);
+}
+
+.tbody td {
+    padding: 16px 0;
+}

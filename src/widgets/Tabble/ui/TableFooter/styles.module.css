@@ -1,0 +1,33 @@
+.tfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--clr-black-20);
+}
+
+.pageControl, .pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--clr-black-20);
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttonsContainer button {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonsContainer button:first-of-type {
+    transform: rotate(180deg);
+}
