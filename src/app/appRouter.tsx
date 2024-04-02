@@ -7,6 +7,7 @@ import { MainPage } from '@/pages/main'
 import { LoginPage } from '@/pages/login'
 import { RegistrationPage } from '@/pages/registration'
 import { OrdersPage } from '@/pages/orders'
+import { InventoryPage } from '@/pages/inventory'
 
 export const appRouter = createBrowserRouter([
   {
@@ -14,7 +15,8 @@ export const appRouter = createBrowserRouter([
     errorElement: <div>Error</div>,
     children: [
       { path: '/', element: <MainPage /> },
-      { path: '/orders', element: <OrdersPage /> }
+      { path: '/orders', element: <OrdersPage /> },
+      { path: '/inventory', element: <InventoryPage /> }
     ]
   },
   {

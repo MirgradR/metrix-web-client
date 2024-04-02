@@ -6,7 +6,7 @@ import Icon from '@/shared/ui/Icon/Icon'
 import Text from '@/shared/ui/Text/Text'
 import styles from './styles.module.css'
 
-const CustomerStatistics = ({ period, customers, diffCustomers, active, diffActive }: CustomerStatisticsProps) => {
+const CustomerStatistics = ({ period, data }: CustomerStatisticsProps) => {
   return (
     <Block className={styles.blockHover}>
       <div className={styles.summaryCardHeader}>
@@ -26,8 +26,9 @@ const CustomerStatistics = ({ period, customers, diffCustomers, active, diffActi
         </Text>
       </div>
       <div className={styles.summaryColumns}>
-        <SummaryCardValues title="Customers" value={customers} difference={diffCustomers} />
-        <SummaryCardValues title="Active" value={active} difference={diffActive} />
+        {data.map((item, index) => (
+          <SummaryCardValues key={index} title={item.title} value={item?.value} difference={item?.difference} />
+        ))}
       </div>
     </Block>
   )

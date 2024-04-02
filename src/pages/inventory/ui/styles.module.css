@@ -1,0 +1,35 @@
+.container {
+  padding: 23px;
+  height: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  height: 36px;
+  font-size: 14px;
+  padding-block: 6px;
+  column-gap: 8px;
+}
+
+.contentWrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.widgets {
+  display: flex;
+  gap: 20px;
+}
+
+.widgets > * {
+  flex: 1
+}

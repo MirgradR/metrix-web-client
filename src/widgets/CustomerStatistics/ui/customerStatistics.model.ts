@@ -1,7 +1,10 @@
+interface InventoryDataProps {
+  value: number
+  title?: string
+  difference?: string
+}
+
 export interface CustomerStatisticsProps {
   period: string
-  customers: number
-  diffCustomers: string
-  active: number
-  diffActive: string
+  data: InventoryDataProps[]
 }
